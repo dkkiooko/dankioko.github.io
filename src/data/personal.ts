@@ -1,12 +1,14 @@
 export const personalInfo = {
   name: "Dan Kioko",
-  title: "Full Stack Developer",
+  title: "Creative Developer • Tech Enthusiast",
   email: "kithekadankioko@gmail.com",
   location: "Kenya",
-  bio: "Passionate full-stack developer with expertise in modern web technologies. I love creating innovative solutions and building scalable applications that make a difference.",
+  bio: "Passionate full-stack developer with expertise in modern web technologies. I love creating innovative solutions and building scalable applications that make a difference in people's lives.",
   avatar: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400",
   github: "https://github.com/dkkiooko/",
   linkedin: "https://www.linkedin.com/in/kithekadankioko/",
+  twitter: "https://twitter.com/dankioko",
+  resumeUrl: "/resume.pdf",
 };
 
 export const experience = [
@@ -84,6 +86,16 @@ export const projects = [
     githubUrl: "https://github.com/dkkiooko/",
     featured: false,
   },
+  {
+    id: 4,
+    title: "Portfolio Website",
+    description: "A modern, responsive portfolio website built with Next.js and Tailwind CSS featuring smooth animations and optimized performance.",
+    image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    liveUrl: "https://example.com",
+    githubUrl: "https://github.com/dkkiooko/",
+    featured: true,
+  },
 ];
 
 export const skills = {
@@ -92,3 +104,30 @@ export const skills = {
   tools: ["Git", "Docker", "AWS", "Vercel", "Figma", "VS Code", "Postman", "Linux"],
   other: ["Agile/Scrum", "Testing", "CI/CD", "Performance Optimization", "Team Leadership"],
 };
+
+export const blogPosts = [
+  {
+    id: 1,
+    title: "Building Scalable React Applications",
+    excerpt: "Learn the best practices for building large-scale React applications that are maintainable and performant.",
+    date: "2024-01-15",
+    readTime: "5 min read",
+    slug: "building-scalable-react-applications",
+  },
+  {
+    id: 2,
+    title: "The Future of Web Development",
+    excerpt: "Exploring emerging trends and technologies that are shaping the future of web development.",
+    date: "2024-01-10",
+    readTime: "7 min read",
+    slug: "future-of-web-development",
+  },
+  {
+    id: 3,
+    title: "TypeScript Best Practices",
+    excerpt: "Essential TypeScript patterns and practices that every developer should know for better code quality.",
+    date: "2024-01-05",
+    readTime: "6 min read",
+    slug: "typescript-best-practices",
+  },
+];

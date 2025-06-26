@@ -5,48 +5,18 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="md:col-span-2">
             <h3 className="font-poppins text-lg font-semibold mb-4">Dan Kioko</h3>
-            <p className="text-gray-400 leading-relaxed">
-              Passionate full-stack developer creating innovative solutions and building scalable applications that make a difference.
+            <p className="text-gray-400 leading-relaxed mb-6 max-w-md">
+              Passionate full-stack developer creating innovative solutions and building scalable applications that make a difference in people's lives.
             </p>
-          </div>
-          
-          <div>
-            <h3 className="font-poppins text-lg font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="#about" className="text-gray-400 hover:text-primary-400 transition-colors">
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link href="#projects" className="text-gray-400 hover:text-primary-400 transition-colors">
-                  Projects
-                </Link>
-              </li>
-              <li>
-                <Link href="#skills" className="text-gray-400 hover:text-primary-400 transition-colors">
-                  Skills
-                </Link>
-              </li>
-              <li>
-                <Link href="#contact" className="text-gray-400 hover:text-primary-400 transition-colors">
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 className="font-poppins text-lg font-semibold mb-4">Connect</h3>
             <div className="flex space-x-4">
               <a
                 href={personalInfo.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-primary-400 transition-colors transform hover:scale-110"
+                className="text-gray-400 hover:text-emerald-400 transition-colors transform hover:scale-110"
               >
                 <span className="sr-only">GitHub</span>
                 <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -57,7 +27,7 @@ export default function Footer() {
                 href={personalInfo.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-primary-400 transition-colors transform hover:scale-110"
+                className="text-gray-400 hover:text-emerald-400 transition-colors transform hover:scale-110"
               >
                 <span className="sr-only">LinkedIn</span>
                 <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -66,7 +36,7 @@ export default function Footer() {
               </a>
               <a
                 href={`mailto:${personalInfo.email}`}
-                className="text-gray-400 hover:text-primary-400 transition-colors transform hover:scale-110"
+                className="text-gray-400 hover:text-emerald-400 transition-colors transform hover:scale-110"
               >
                 <span className="sr-only">Email</span>
                 <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -75,12 +45,59 @@ export default function Footer() {
               </a>
             </div>
           </div>
+          
+          <div>
+            <h3 className="font-poppins text-lg font-semibold mb-4">Quick Links</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link href="#about" className="text-gray-400 hover:text-emerald-400 transition-colors">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link href="#projects" className="text-gray-400 hover:text-emerald-400 transition-colors">
+                  Projects
+                </Link>
+              </li>
+              <li>
+                <Link href="#skills" className="text-gray-400 hover:text-emerald-400 transition-colors">
+                  Skills
+                </Link>
+              </li>
+              <li>
+                <Link href="#blog" className="text-gray-400 hover:text-emerald-400 transition-colors">
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link href="#contact" className="text-gray-400 hover:text-emerald-400 transition-colors">
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 className="font-poppins text-lg font-semibold mb-4">Services</h3>
+            <ul className="space-y-2 text-gray-400">
+              <li>Web Development</li>
+              <li>Frontend Development</li>
+              <li>Backend Development</li>
+              <li>UI/UX Design</li>
+              <li>Consulting</li>
+            </ul>
+          </div>
         </div>
         
-        <div className="mt-8 pt-8 border-t border-gray-800 text-center">
-          <p className="text-gray-400">
-            © {new Date().getFullYear()} Dan Kioko. All rights reserved.
-          </p>
+        <div className="mt-8 pt-8 border-t border-gray-800">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <p className="text-gray-400 text-sm">
+              © {new Date().getFullYear()} Dan Kioko. All rights reserved.
+            </p>
+            <p className="text-gray-400 text-sm mt-2 md:mt-0">
+              Built with Next.js + TailwindCSS
+            </p>
+          </div>
         </div>
       </div>
     </footer>
