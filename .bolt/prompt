@@ -1,0 +1,131 @@
+✅ Project Name: Daniel Kioko Personal Portfolio
+🎯 Goal of the Website
+Showcase Daniel Kioko’s professional identity: experience, education, technical skills, and selected personal or freelance projects.
+
+Host an optional developer blog (can be markdown-based).
+
+Serve as a creative, professional, and modern online resume and point of contact.
+
+Look impressive, clean, and easy to navigate on both desktop and mobile.
+
+Avoid complex backend needs unless future blog or contact features require it.
+
+🧠 AI Instructions (Follow These When Assisting)
+1. Design Guidelines
+Prioritize clean, modern, and responsive design.
+
+Embrace minimalism with cool animations or hover effects for personality.
+
+Use a modular component structure with reusable sections.
+
+Consider light or dark themes depending on project tone.
+
+Favor section-based scrolling (Experience, Projects, About, Blog).
+
+2. Content Structure
+Here’s how to structure the site:
+
+Landing/Home Page
+
+Intro: “Hi, I’m Daniel Kioko” + tagline + short bio.
+
+Call to action: “View My Work” or “Get in Touch.”
+
+About
+
+Summary of your background and passions.
+
+A cool timeline or cards for Education and Experience.
+
+Projects
+
+Highlight key projects (even 2–4 is fine).
+
+Include links to GitHub, external demos, or write-ups.
+
+Optional tags like React, Python, etc.
+
+Skills
+
+A visually clear layout of tools/languages.
+
+Group by categories: Frontend, Backend, DevOps, Tools.
+
+Blog (optional but planned)
+
+Markdown or MDX based for simple setup.
+
+Show latest 3-5 posts with a "Read More" button.
+
+Contact
+
+Simple contact form or email link.
+
+Include social media icons (LinkedIn, GitHub, Twitter if available).
+
+🧱 Tech Stack Recommendation
+(Can be adjusted depending on learning goals or deployment needs)
+
+Frontend:
+
+Next.js (for built-in routing, SSR, and blog readiness)
+
+React + TailwindCSS (for modern styling and utility classes)
+
+Framer Motion (for smooth animations)
+
+MDX or Contentlayer (for blog support)
+
+Backend:
+
+None required for now.
+
+If needed in future: serverless functions (Vercel) or a static CMS like Notion or Sanity.
+
+Deployment:
+
+Vercel or Netlify (free tiers, fast CI/CD).
+
+Use GitHub for version control + deployment integration.
+
+📂 Folder Structure Suggestion (Next.js based)
+bash
+Copy
+Edit
+my-portfolio/
+├── pages/
+│   ├── index.tsx        # Home
+│   ├── about.tsx
+│   ├── projects.tsx
+│   ├── blog/
+│   │   └── [slug].tsx   # Dynamic blog pages
+│   └── contact.tsx
+├── components/          # UI components
+├── styles/              # Global and Tailwind styles
+├── public/              # Static assets
+├── data/                # Projects, skills, posts in JSON or MDX
+├── lib/                 # Blog fetching, helpers
+├── next.config.js
+└── tailwind.config.js
+✍️ Tone & Personality
+Keep the tone warm, confident, and clear.
+
+Use first-person (“I’m Daniel…”) on the About and Home pages.
+
+Maintain a voice that reflects Daniel’s passion for tech, learning, and creativity.
+
+🤝 Audience
+Potential employers and freelance clients
+
+Tech community and collaborators
+
+Friends or curious visitors
+
+🚀 Deployment + Ongoing Features
+Ensure fast load time and responsiveness.
+
+Add SEO tags and favicon.
+
+Optional: Add Google Analytics for basic traffic insights.
+
+Optional: Later features might include newsletter signup, search, or downloadable resume.
