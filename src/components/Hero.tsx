@@ -21,11 +21,6 @@ const Hero = () => {
             <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
               Backend Developer & Creative Technologist crafting smart, user-focused tools — from data dashboards to educational games — using code, curiosity, and a passion for real-world impact.
             </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-gradient-to-r from-blue-900 to-blue-800 text-white px-8 py-4 rounded-lg font-semibold hover:from-blue-800 hover:to-blue-700 transition-all duration-200 transform hover:scale-105 shadow-lg">
-              View My Work
-            </button>
-          </div>
         </div>
 
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
